@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.location {
+  padding: 60px 0;
+  background-color: #fff;
+}
+.location .location-contain {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 991px) {
+  .location {
+    padding: 30px 0;
+  }
+  .location .location-contain {
+    flex-direction: column;
+  }
+}
+.location .location-contain .box1 {
+  width: 100%;
+  background-color: #fff;
+}
+.location .location-contain .box1 .item {
+  margin-bottom: 40px;
+}
+.location .location-contain .box1 .item:hover i {
+  color: #fff;
+  background-color: var(--main-color);
+}
+.location .location-contain .box1 .item i {
+  font-size: 20px;
+  color: var(--main-color);
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #ecf9f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.location .location-contain .box1 .item h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37423b;
+}
+.location .location-contain .box1 .item p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #657a6d;
+}
+.location .location-contain .box2 {
+  width: 100%;
+}
+.location .location-contain .box2 .form-control {
+  outline-style: var(--main-color);
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.location .location-contain .box2 .form-control input {
+  width: 50%;
+  padding: 10px;
+}
+.location .location-contain .box2 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.location .location-contain .box2 textarea {
+    width: 100%;
+    padding: 10px;
+}
+.location .location-contain .box2 input.submit {
+    background-color: var(--main-color);
+    margin-top: 10px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}

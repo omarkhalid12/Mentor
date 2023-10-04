@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.price {
+  padding: 60px 0;
+  background-color: #fff;
+}
+.price .price-content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  text-align: center;
+}
+.price .item {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #eef0ef;
+  position: relative;
+}
+.price .item h3 {
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #777777;
+  background: #f8f8f8;
+}
+.price .item h3.active {
+    background-color: var(--main-color);
+}
+.price .item h4 {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  position: relative;
+}
+.price .item h4::before {
+  content: "$";
+  position: absolute;
+  left: 22.5%;
+  top: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+.price .item h4 span {
+  font-size: 36px;
+  color: #5fcf80;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.price .item ul {
+    color: #444444;
+    line-height: 20px;
+    font-size: 14px;
+}
+.price .item ul .na {
+    color: #ccc;
+    text-decoration: line-through;
+}
+.price .item ul li {
+    padding-bottom: 16px;
+}
+.price .item .btn {
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+    background: #f8f8f8;
+}
+.price .item .btn a {
+    background: #5fcf80;
+    display: inline-block;
+    padding: 8px 35px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+.price .item .btn a:hover {
+    background-color: var(--main-color);
+}
